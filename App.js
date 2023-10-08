@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import Product from "./src/component/ReviewScreen";
+import LoginScreen from "./src/component/LoginScreen";
+import GeneratePasswordScreen from "./src/component/GeneratePasswordScreen";
+import CartScreen from "./src/component/CartScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <LoginScreen /> */}
+      {/* <Product /> */}
+      {/* <GeneratePasswordScreen /> */}
+      <CartScreen />
     </View>
   );
 }
@@ -13,8 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // backgroundColor: "#F0C200",
+    backgroundColor: "#23235B",
   },
 });
